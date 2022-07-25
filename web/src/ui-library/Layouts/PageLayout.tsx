@@ -14,10 +14,10 @@ const PageLayout: React.FC<IProps> = ({ children }) => {
         <div>
             <Box
                 zIndex='1'
-                bgGradient='linear(to-br, #2599D2, black 50%)'
+                bgGradient='linear(to-br, #2599D2, black 40%)'
                 opacity='50%'
                 overflow='hidden'
-                height='30%'
+                height='40%'
                 width='100%'
                 position='fixed'
                 top='0'
