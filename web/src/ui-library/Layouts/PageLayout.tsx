@@ -1,7 +1,9 @@
 import React from 'react'
 import {
     Box,
+    Image,
 } from '@chakra-ui/react'
+import bgImage from '../../assets/images/bgImage.svg'
 
 interface IProps {
     children: React.ReactElement
@@ -20,6 +22,16 @@ const PageLayout: React.FC<IProps> = ({ children }) => {
                 position='fixed'
                 top='0'
             >
+            </Box>
+            <Box
+                position='absolute'
+                zIndex='2'
+            >
+                <Image
+                    src={bgImage}
+                    width='70%'
+                    marginLeft='auto'
+                />
             </Box>
             <Box
                 position='absolute'
