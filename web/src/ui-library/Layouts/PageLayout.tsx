@@ -25,12 +25,12 @@ const PageLayout: React.FC<IProps> = ({ children }) => {
             </Box>
             <Box
                 position='absolute'
+                right='0'
                 zIndex='2'
             >
                 <Image
                     src={bgImage}
-                    width='70%'
-                    marginLeft='auto'
+                    width='70vw'
                 />
             </Box>
             <Box
