@@ -14,10 +14,10 @@ const CookiesBar = (props: Props) => {
     return (
         <Box
             hidden={!acrive}
+            width='100vw'
             overflow='hidden'
             position='fixed'
             height='12%'
-            width='100%'
             bottom='0'
             bgColor='black'
         >
