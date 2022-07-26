@@ -11,7 +11,7 @@ interface IProps {
 
 const PageLayout: React.FC<IProps> = ({ children }) => {
     return (
-        <div>
+        <Box>
             <Box
                 zIndex='1'
                 bgGradient='linear(to-br, #2599D2, black 40%)'
@@ -39,7 +39,7 @@ const PageLayout: React.FC<IProps> = ({ children }) => {
             >
                 {children}
             </Box>
-        </div>
+        </Box>
     )
 }
 

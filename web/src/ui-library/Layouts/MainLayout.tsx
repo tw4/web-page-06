@@ -11,7 +11,9 @@ const MainLayout: React.FC<IProps> = ({ children }) => {
     return (
         <Box
             height='500vh'
+            width='100%'
             bgColor='black'
+            overflowX='hidden'
         >
             {children}
         </Box>
