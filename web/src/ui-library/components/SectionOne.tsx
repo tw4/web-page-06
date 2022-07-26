@@ -15,11 +15,11 @@ type Props = {}
 const SectionOne = (props: Props) => {
     return (
         <Box
-            marginTop='5'
-            marginLeft='5%'
-            marginRight='5%'
             height='100vh'
             color='grey'
+            marginLeft='5%'
+            marginRight='5%'
+            marginTop='5%'
         >
             <HStack
             >
@@ -69,11 +69,11 @@ const SectionOne = (props: Props) => {
                     />
                 </VStack>
                 <VStack
-                    width='33vw'
+                    width='30vw'
                 >
                     <HStack
-                        marginLeft='50%'
-                        width='50%'
+                        marginLeft='45%'
+                        width='100%'
                         textAlign='left'
                     >
                         <Image
@@ -86,9 +86,8 @@ const SectionOne = (props: Props) => {
                         </Text>
                     </HStack>
                     <HStack
-                        paddingLeft='20%'
-                        width='50%'
-                        paddingTop='30%'
+                        paddingTop='20%'
+                        width='100%'
                         textAlign='left'
                     >
                         <Image
@@ -105,7 +104,7 @@ const SectionOne = (props: Props) => {
             <Box
                 marginTop='5%'
                 textAlign='center'
-                width='100vw'
+                width='100%'
             >
                 <Text
                     fontSize='4xl'
