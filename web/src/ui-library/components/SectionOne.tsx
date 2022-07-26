@@ -6,37 +6,26 @@ import {
     Text,
     VStack,
 } from '@chakra-ui/react'
-import logo from '../../assets/images/logo.svg'
 import productImage from '../../assets/images/productImage.svg'
 import star from '../../assets/images/star.svg'
 
-type Props = {}
+interface IProps  {
+    changeLink: (newLink:string) => void
+}
 
-const SectionOne = (props: Props) => {
+const SectionOne:React.FC<IProps> = ({changeLink}) => {
     return (
         <Box
             height='100vh'
             color='grey'
-            marginLeft='5%'
-            marginRight='5%'
             marginTop='5%'
+            id='1'
+            onMouseOver={() => changeLink('1')}
         >
             <HStack
-            >
-                <Image
-                    src={logo}
-                    height='50px'
-                />
-                <Text
-                    paddingTop='1%'
-                    fontSize='xl'
-                    color='white'
-                >
-                    WIFI
-                </Text>
-            </HStack>
-            <HStack
-                marginTop='15%'
+                marginTop='20%'
+                marginLeft='5%'
+                marginRight='5%'
             >
                 <VStack
                     height='320px'

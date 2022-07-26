@@ -5,19 +5,24 @@ import {
     Text,
     Link,
 } from '@chakra-ui/react'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import logo from '../../assets/images/logo.svg'
 
 interface IProps {
-    divName:string
+    link: string
+    changeLink: (newLink: string) => void
 }
 
-const NavBar:React.FC<IProps> = ({divName}) => {
+const NavBar: React.FC<IProps> = ({ link, changeLink }) => {
     return (
         <Box
+            width='100%'
+            position='fixed'
+            top='0'
             marginLeft='5%'
             marginRight='5%'
             marginTop='5%'
+            zIndex='4'
         >
             <HStack
             >
@@ -33,36 +38,48 @@ const NavBar:React.FC<IProps> = ({divName}) => {
                     WIFI
                 </Text>
                 <HStack
-                paddingTop='1%'
-                fontSize='xl'
-                width='100%'
-                justifyContent='space-evenly'
+                    width='100%'
+                    paddingTop='1%'
+                    fontSize='xl'
+                    color='grey'
+                    justifyContent='space-evenly'
+                    transitionDuration='500ms'
+                    opacity='0.0'
+                    _hover={{
+                        transitionDuration:'500ms',
+                        opacity:'1',
+                    }}
                 >
-                <Link
-                    href='#2'
-                    color={divName === '2'? 'white' : 'grey'}
-                >
-                    Lösungen
-                </Link>
-                <Link
-                    href='#3'
-                    color={divName === '3'? 'white' : 'grey'}
-                >
-                    Über Uns
-                </Link>
-                <Link
-                href='#4'
-                color={divName === '4'? 'white' : 'grey'}
-                >
-                    REFERENZEN
-                </Link>
-                <Link
-                    href='#5'
-                    color={divName === '5'? 'white' : 'grey'}
-                >
-                    REFERENZEN
-                </Link>
-            </HStack>
+                    <Link
+                        onClick={() => changeLink('1')}
+                        href='#1'
+                        color={link === '1' ? 'white' : 'grey'}
+                    >
+                        Home
+                    </Link>
+                    <Link
+                        onClick={() => changeLink('2')}
+                        href='#2'
+                        color={link === '2' ? 'white' : 'grey'}
+                    >
+                        Lösungen
+                    </Link>
+                    <Link
+                        href='#3'
+                    >
+                        Über Uns
+                    </Link>
+                    <Link
+                        href='#4'
+                    >
+                        REFERENZEN
+                    </Link>
+                    <Link
+                        href='#5'
+                    >
+                        REFERENZEN
+                    </Link>
+                </HStack>
             </HStack>
         </Box>
     )

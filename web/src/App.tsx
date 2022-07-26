@@ -1,8 +1,9 @@
 import {
   Stack,
 } from '@chakra-ui/react'
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import CookiesBar from './ui-library/components/CookiesBar'
+import NavBar from './ui-library/components/NavBar'
 import SectionOne from './ui-library/components/SectionOne'
 import SectionTwo from './ui-library/components/SectionTwo'
 import MainLayout from './ui-library/Layouts/MainLayout'
@@ -11,6 +12,11 @@ import PageLayout from './ui-library/Layouts/PageLayout'
 type Props = {}
 
 const App = (props: Props) => {
+  const [link, setLink] = useState<string>('')
+
+  const changeLink = (newLink: string) => {
+    setLink(newLink)
+  }
 
   useEffect(() => {
     function handleResize() {
@@ -23,8 +29,16 @@ const App = (props: Props) => {
     <MainLayout>
       <PageLayout>
         <Stack>
-          <SectionOne />
-          <SectionTwo/>
+          <NavBar
+           changeLink={changeLink}
+          link={link}
+          />
+          <SectionOne
+            changeLink={changeLink}
+          />
+          <SectionTwo
+            changeLink={changeLink}
+          />
           <CookiesBar />
         </Stack>
       </PageLayout>

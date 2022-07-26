@@ -11,12 +11,13 @@ import card1 from '../../assets/images/card1.svg'
 import card2 from '../../assets/images/card2.svg'
 import card3 from '../../assets/images/card3.svg'
 import card4 from '../../assets/images/card4.svg'
-import NavBar from './NavBar'
 
 
-type Props = {}
+interface IProps {
+  changeLink:(newLink:string) => void
+}
 
-const SectionTwo = (props: Props) => {
+const SectionTwo:React.FC<IProps> = ({changeLink}) => {
   return (
     <Box
       id='2'
@@ -25,8 +26,10 @@ const SectionTwo = (props: Props) => {
       bgRepeat='no-repeat'
       bgPosition='center'
       bgSize='100vh'
+      paddingTop='10%'
+      onMouseOver={() => changeLink('2')}
+
     >
-      <NavBar divName='2' />
       <VStack
         marginTop='5%'
         marginBottom='5%'
@@ -37,13 +40,13 @@ const SectionTwo = (props: Props) => {
           bgGradient='linear(to-l, grey, white, grey)'
           bgClip='text'
         >
-        WIFI Technologie.
+          WIFI Technologie.
         </Text>
         <Text
           color='grey'
           fontSize='xl'
         >
-        Unzählige Einsatzmöglichkeiten. Finden Sie Ihre:
+          Unzählige Einsatzmöglichkeiten. Finden Sie Ihre:
         </Text>
       </VStack>
       <SimpleGrid
@@ -56,20 +59,20 @@ const SectionTwo = (props: Props) => {
           content='Für ein smartes Zuhause.'
           image={card1}
         />
-        <Card 
-        title='Business'
-        content='Für ein vernetztes Unternehmen.'
-        image={card2}
+        <Card
+          title='Business'
+          content='Für ein vernetztes Unternehmen.'
+          image={card2}
         />
-        <Card 
-        title='Education'
-        content='Für eine digitale Zukunft.'
-        image={card3}
+        <Card
+          title='Education'
+          content='Für eine digitale Zukunft.'
+          image={card3}
         />
-        <Card 
-        title='Industrial'
-        content='Für den digitalen Fortschritt.'
-        image={card4}
+        <Card
+          title='Industrial'
+          content='Für den digitalen Fortschritt.'
+          image={card4}
         />
       </SimpleGrid>
     </Box>
