@@ -20,6 +20,7 @@ const CookiesBar = (props: Props) => {
             height='12%'
             bottom='0'
             bgColor='black'
+            zIndex='3'
         >
             <HStack
                 marginLeft='5%'
