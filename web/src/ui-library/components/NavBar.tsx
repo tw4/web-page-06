@@ -46,8 +46,8 @@ const NavBar: React.FC<IProps> = ({ link, changeLink }) => {
                     transitionDuration='500ms'
                     opacity='0.0'
                     _hover={{
-                        transitionDuration:'500ms',
-                        opacity:'1',
+                        transitionDuration: '500ms',
+                        opacity: '1',
                     }}
                 >
                     <Link
@@ -65,23 +65,21 @@ const NavBar: React.FC<IProps> = ({ link, changeLink }) => {
                         Lösungen
                     </Link>
                     <Link
+                        onClick={() => changeLink('3')}
                         href='#3'
+                        color={link === '3' ? 'white' : 'grey'}
+
                     >
-                        Über Uns
-                    </Link>
-                    <Link
-                        href='#4'
-                    >
-                        REFERENZEN
-                    </Link>
-                    <Link
-                        href='#5'
-                    >
-                        REFERENZEN
-                    </Link>
-                </HStack>
+                    REFERENZEN
+                </Link>
+                <Link
+                    href='#5'
+                >
+                    Kontakt
+                </Link>
             </HStack>
-        </Box>
+        </HStack>
+        </Box >
     )
 }
 
