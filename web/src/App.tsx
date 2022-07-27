@@ -5,6 +5,7 @@ import React, { useEffect, useState } from 'react'
 import CookiesBar from './ui-library/components/CookiesBar'
 import NavBar from './ui-library/components/NavBar'
 import SectionOne from './ui-library/components/SectionOne'
+import SectionThree from './ui-library/components/SectionThree'
 import SectionTwo from './ui-library/components/SectionTwo'
 import MainLayout from './ui-library/Layouts/MainLayout'
 import PageLayout from './ui-library/Layouts/PageLayout'
@@ -38,6 +39,9 @@ const App = (props: Props) => {
           />
           <SectionTwo
             changeLink={changeLink}
+          />
+          <SectionThree 
+          changeLink={changeLink}
           />
           <CookiesBar />
         </Stack>
