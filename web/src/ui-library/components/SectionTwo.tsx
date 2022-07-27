@@ -14,10 +14,10 @@ import card4 from '../../assets/images/card4.svg'
 
 
 interface IProps {
-  changeLink:(newLink:string) => void
+  changeLink: (newLink: string) => void
 }
 
-const SectionTwo:React.FC<IProps> = ({changeLink}) => {
+const SectionTwo: React.FC<IProps> = ({ changeLink }) => {
   return (
     <Box
       id='2'
@@ -49,33 +49,32 @@ const SectionTwo:React.FC<IProps> = ({changeLink}) => {
           Unzählige Einsatzmöglichkeiten. Finden Sie Ihre:
         </Text>
       </VStack>
-      <SimpleGrid
-        marginLeft='5%'
-        columns={[2, null, 4]}
-        spacing={10}
-      >
-        <Card
-          title='Home'
-          content='Für ein smartes Zuhause.'
-          image={card1}
-        />
-        <Card
-          title='Business'
-          content='Für ein vernetztes Unternehmen.'
-          image={card2}
-        />
-        <Card
-          title='Education'
-          content='Für eine digitale Zukunft.'
-          image={card3}
-        />
-        <Card
-          title='Industrial'
-          content='Für den digitalen Fortschritt.'
-          image={card4}
-        />
-      </SimpleGrid>
-    </Box>
+        <SimpleGrid
+          columns={[2, null, 4]}
+          spacing={10}
+        >
+          <Card
+            title='Home'
+            content='Für ein smartes Zuhause.'
+            image={card1}
+          />
+          <Card
+            title='Business'
+            content='Für ein vernetztes Unternehmen.'
+            image={card2}
+          />
+          <Card
+            title='Education'
+            content='Für eine digitale Zukunft.'
+            image={card3}
+          />
+          <Card
+            title='Industrial'
+            content='Für den digitalen Fortschritt.'
+            image={card4}
+          />
+        </SimpleGrid>
+      </Box>
   )
 }
 
