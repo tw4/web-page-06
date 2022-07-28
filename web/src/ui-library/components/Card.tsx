@@ -37,7 +37,7 @@ const Card: React.FC<IProps> = ({ title, content, image }) => {
                 zIndex='1'
                 borderWidth='1px'
                 style={{
-                    borderImage: 'linear-gradient(to bottom right, grey 30%, black 100%) 1'
+                    borderImage: 'linear-gradient(to bottom right, grey 30%, black 120%) 1'
                 }}
                 borderStyle='solid'
                 borderRadius='10px'
