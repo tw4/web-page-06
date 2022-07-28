@@ -3,6 +3,7 @@ import {
 } from '@chakra-ui/react'
 import React, { useEffect, useState } from 'react'
 import CookiesBar from './ui-library/components/CookiesBar'
+import Footer from './ui-library/components/Footer'
 import NavBar from './ui-library/components/NavBar'
 import SectionFour from './ui-library/components/SectionFour'
 import SectionOne from './ui-library/components/SectionOne'
@@ -32,8 +33,8 @@ const App = (props: Props) => {
       <PageLayout>
         <Stack>
           <NavBar
-           changeLink={changeLink}
-          link={link}
+            changeLink={changeLink}
+            link={link}
           />
           <SectionOne
             changeLink={changeLink}
@@ -41,13 +42,14 @@ const App = (props: Props) => {
           <SectionTwo
             changeLink={changeLink}
           />
-          <SectionThree 
-          changeLink={changeLink}
+          <SectionThree
+            changeLink={changeLink}
           />
           <SectionFour
-          changeLink={changeLink}
+            changeLink={changeLink}
           />
           <CookiesBar />
+          <Footer />
         </Stack>
       </PageLayout>
     </MainLayout>
