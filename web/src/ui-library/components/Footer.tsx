@@ -44,7 +44,6 @@ const Footer = (props: Props) => {
               UID CHE-000.000.000
               <br />
               Vertreten durch
-              Steffen Siewert
             </Text>
             <Text>
               <br />
@@ -76,7 +75,6 @@ const Footer = (props: Props) => {
               UID CHE-000.000.000
               <br />
               Vertreten durch
-              Steffen Siewert
             </Text>
             <Text>
               <br />
@@ -108,7 +106,6 @@ const Footer = (props: Props) => {
               UID CHE-000.000.000
               <br />
               Vertreten durch
-              Steffen Siewert
             </Text>
             <Text>
               <br />
