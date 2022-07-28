@@ -9,17 +9,17 @@ import {
 import productImage from '../../assets/images/productImage.svg'
 import star from '../../assets/images/star.svg'
 
-interface IProps  {
-    changeLink: (newLink:string) => void
+interface IProps {
+    changeLink: (newLink: string) => void
 }
 
-const SectionOne:React.FC<IProps> = ({changeLink}) => {
+const SectionOne: React.FC<IProps> = ({ changeLink }) => {
     return (
         <Box
+            id='1'
             height='100vh'
             color='grey'
             marginTop='5%'
-            id='1'
             onMouseOver={() => changeLink('1')}
         >
             <HStack
@@ -61,7 +61,7 @@ const SectionOne:React.FC<IProps> = ({changeLink}) => {
                     width='30vw'
                 >
                     <HStack
-                        marginLeft='45%'
+                        marginLeft='30%'
                         width='100%'
                         textAlign='left'
                     >
