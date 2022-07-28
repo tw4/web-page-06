@@ -70,15 +70,17 @@ const NavBar: React.FC<IProps> = ({ link, changeLink }) => {
                         color={link === '3' ? 'white' : 'grey'}
 
                     >
-                    REFERENZEN
-                </Link>
-                <Link
-                    href='#5'
-                >
-                    Kontakt
-                </Link>
+                        REFERENZEN
+                    </Link>
+                    <Link
+                        onClick={() => changeLink('4')}
+                        href='#4'
+                        color={link === '4' ? 'white' : 'grey'}
+                    >
+                        Kontakt
+                    </Link>
+                </HStack>
             </HStack>
-        </HStack>
         </Box >
     )
 }
