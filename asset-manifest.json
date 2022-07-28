@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.js": "/web-page-06/static/js/main.bf843ebd.js",
+    "static/media/imageCard2.svg": "/web-page-06/static/media/imageCard2.c127fdc4571411044a21a7d150f065de.svg",
+    "static/media/imageCard1.svg": "/web-page-06/static/media/imageCard1.5fc70abc5a5763447fad89d9a8466ff2.svg",
+    "static/media/productImage.svg": "/web-page-06/static/media/productImage.ebedaeb3b18037b911eb2818aa196c6d.svg",
+    "static/media/logo.svg": "/web-page-06/static/media/logo.b028b39d643ea2d6c719c07ec1744ee2.svg",
+    "static/media/card4.svg": "/web-page-06/static/media/card4.2cfe11751bfa09ab8d59b01a5a812ba9.svg",
+    "static/media/card2.svg": "/web-page-06/static/media/card2.c214d9ac4c887076cae2b132a948f758.svg",
+    "static/media/card1.svg": "/web-page-06/static/media/card1.2318396c9c80d6bcdbf4a1cf24c4a152.svg",
+    "static/media/card3.svg": "/web-page-06/static/media/card3.59ec4d0d201cd3e3a57548a72f8ae653.svg",
+    "static/media/bgImage.svg": "/web-page-06/static/media/bgImage.cc5db253f470fedc0738b6b19eae94c2.svg",
+    "static/media/sectionFourBg.svg": "/web-page-06/static/media/sectionFourBg.02aed360a786eaaa3bbb07f53790c667.svg",
+    "static/media/sectionFourFormBg.svg": "/web-page-06/static/media/sectionFourFormBg.fa262349c1faca5a99ed2b8fb1cf872a.svg",
+    "static/media/star.svg": "/web-page-06/static/media/star.25fccbf84ab52f3b1ccbcd5ade6fcd33.svg",
+    "static/media/sectionThreeBg.svg": "/web-page-06/static/media/sectionThreeBg.af05177f92f4928d33e5c9636f06459f.svg",
+    "index.html": "/web-page-06/index.html",
+    "static/media/circle.svg": "/web-page-06/static/media/circle.cc47f162712b669e010ea02c9f0d4235.svg",
+    "main.bf843ebd.js.map": "/web-page-06/static/js/main.bf843ebd.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.bf843ebd.js"
+  ]
+}
