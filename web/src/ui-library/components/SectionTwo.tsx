@@ -49,32 +49,34 @@ const SectionTwo: React.FC<IProps> = ({ changeLink }) => {
           Unzählige Einsatzmöglichkeiten. Finden Sie Ihre:
         </Text>
       </VStack>
-        <SimpleGrid
-          columns={[2, null, 4]}
-          spacing={10}
-        >
-          <Card
-            title='Home'
-            content='Für ein smartes Zuhause.'
-            image={card1}
-          />
-          <Card
-            title='Business'
-            content='Für ein vernetztes Unternehmen.'
-            image={card2}
-          />
-          <Card
-            title='Education'
-            content='Für eine digitale Zukunft.'
-            image={card3}
-          />
-          <Card
-            title='Industrial'
-            content='Für den digitalen Fortschritt.'
-            image={card4}
-          />
-        </SimpleGrid>
-      </Box>
+      <SimpleGrid
+        marginLeft='5%'
+        marginRight='5%'
+        columns={[2, null, 4]}
+        spacing={10}
+      >
+        <Card
+          title='Home'
+          content='Für ein smartes Zuhause.'
+          image={card1}
+        />
+        <Card
+          title='Business'
+          content='Für ein vernetztes Unternehmen.'
+          image={card2}
+        />
+        <Card
+          title='Education'
+          content='Für eine digitale Zukunft.'
+          image={card3}
+        />
+        <Card
+          title='Industrial'
+          content='Für den digitalen Fortschritt.'
+          image={card4}
+        />
+      </SimpleGrid>
+    </Box>
   )
 }
 
