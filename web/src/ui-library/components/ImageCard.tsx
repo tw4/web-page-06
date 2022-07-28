@@ -3,7 +3,6 @@ import {
   HStack,
   Image,
   Text,
-  VStack,
   UnorderedList,
   ListItem,
 } from '@chakra-ui/react'
