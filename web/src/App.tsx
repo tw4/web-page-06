@@ -4,6 +4,7 @@ import {
 import React, { useEffect, useState } from 'react'
 import CookiesBar from './ui-library/components/CookiesBar'
 import NavBar from './ui-library/components/NavBar'
+import SectionFour from './ui-library/components/SectionFour'
 import SectionOne from './ui-library/components/SectionOne'
 import SectionThree from './ui-library/components/SectionThree'
 import SectionTwo from './ui-library/components/SectionTwo'
@@ -41,6 +42,9 @@ const App = (props: Props) => {
             changeLink={changeLink}
           />
           <SectionThree 
+          changeLink={changeLink}
+          />
+          <SectionFour
           changeLink={changeLink}
           />
           <CookiesBar />
