@@ -2,5 +2,5 @@
 
 <hr>
 <p>
-web site link = https://mertovich.github.io/web-page-06/
+web site link = https://mertsabinov.github.io/web-page-06/
 </p>
